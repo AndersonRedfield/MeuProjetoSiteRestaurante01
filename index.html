@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Restaurante Mestre Cuca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="./Assets/Logo Restaurante.png" alt="Logo" class="logo">
+        <h1>Bem-vindos ao Mestre Cuca</h1>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+    </div>
+    <nav id="navbar">
+        <ul class="navbar-links">
+            <li><a href="#inicio">Início</a></li>  
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#promocoes">Promoções</a></li>
+            <li><a href="#galeria">Especialidades</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="inicio">
+    <div class="inicio-content">
+        <div class="texto-intro">
+            <h2>O melhor da gastronomia artesanal está aqui!</h2>
+            <p>Pratos feitos com carinho e ingredientes frescos.</p>
+        </div>
+        <div class="form-lateral">
+            <form class="form-container" id="form-contato">
+                <h2>Reserve sua Mesa</h2>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required placeholder="Seu nome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                <label for="people">Quantidade de Pessoas:</label>
+                <input type="number" id="people" name="people" min="1" required>
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required placeholder="Deixe uma observação"></textarea>
+                <button type="submit">Enviar Reserva</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="cardapio">
+    <h2>Nosso Cardápio</h2>
+    <p class="descricao-cardapio">Experimente os sabores que fazem sucesso!</p>
+    <div class="categoria">
+        <h3>Entradas</h3>
+        <div class="prato"><span>Bruschetta Tradicional</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Carpaccio de Filé</span><span>R$ 24,90</span></div>
+        <div class="prato"><span>Pão de Alho</span><span>R$ 15,90</span></div>
+        <div class="prato"><span>Hummus com Pita</span><span>R$ 21,90</span></div>
+        <div class="prato"><span>Tábua de Frios</span><span>R$ 29,90</span></div>
+    </div>
+    <div class="categoria">
+        <h3>Pratos Principais</h3>
+        <div class="prato"><span>Lasanha à Bolonhesa</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Frango Grelhado</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Costela BBQ</span><span>R$ 59,90</span></div>
+        <div class="prato"><span>Salmão na Brasa</span><span>R$ 64,90</span></div>
+        <div class="prato"><span>Moqueca Baiana</span><span>R$ 54,90</span></div>
+    </div>
+    <div class="categoria">
+        <h3>Sobremesas</h3>
+        <div class="prato"><span>Tiramisu</span><span>R$ 14,90</span></div>
+        <div class="prato"><span>Pudim de Leite Condensado</span><span>R$ 12,90</span></div>
+        <div class="prato"><span>Chocolate Lava Cake</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Cheesecake de Morango</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Crème Brûlée</span><span>R$ 19,90</span></div>
+    </div>
+    <div class="categoria">
+        <h3>Bebidas</h3>
+        <div class="prato"><span>Vinho Tinto</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Cerveja Artesanal</span><span>R$ 15,90</span></div>
+        <div class="prato"><span>Whisky</span><span>R$ 25,90</span></div>
+        <div class="prato"><span>Caipirinha</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Milkshake de Chocolate</span><span>R$ 16,90</span></div>
+    </div>
+</section>
+<section id="promocoes">
+    <h2>Promoções Especiais</h2>
+    <div class="promo-box">
+        <h3>Prato do Dia</h3>
+        <p>R$ 39,90 - Acompanha arroz, feijão e suco natural.</p>
+    </div>
+    <div class="promo-box">
+        <h3>Sábado é dia de Pizza</h3>
+        <p>Compre uma pizza grande e leve outra pequena grátis!</p>
+    </div>
+    <div class="promo-box">
+        <h3>Happy Hour</h3>
+        <p>Das 17h às 19h: Chopp em dobro por metade do preço!</p>
+    </div>
+</section>
+<section id="galeria">
+    <h2>Nossas Especialidades</h2>
+    <p class="descricao-especialidades">Conheça as categorias de pratos mais pedidos pelos nossos clientes:</p>
+    <div class="galeria-grid">
+        <a href="#entradas" class="icone-item">
+            <i class="fas fa-utensils fa-5x"></i>
+            <p>Entradas</p>
+        </a>
+        <a href="#principais" class="icone-item">
+            <i class="fas fa-burger fa-5x"></i>
+            <p>Pratos Principais</p>
+        </a>
+        <a href="#pizzas" class="icone-item">
+            <i class="fas fa-pizza-slice fa-5x"></i>
+            <p>Pizzas Artesanais</p>
+        </a>
+        <a href="#massas" class="icone-item">
+            <i class="fas fa-bowl-rice fa-5x"></i>
+            <p>Massas Italianas</p>
+        </a>
+        <a href="#sushis" class="icone-item">
+            <i class="fas fa-fish fa-5x"></i>
+            <p>Sushis e Orientais</p>
+        </a>
+    </div>
+</section>
+<section id="depoimentos">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="depoimento">
+        <p>"O melhor restaurante da cidade! Comida deliciosa e atendimento impecável."</p>
+        <strong>- João Silva</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Sempre volto aqui com minha família. Vale cada centavo!"</p>
+        <strong>- Ana Souza</strong>
+    </div>
+    <div class="depoimento">
+        <p>"A melhor pizza da cidade! Vale muito a pena!"</p>
+        <strong>- Carlos Mendes</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Ambiente familiar e comida incrível. Recomendo demais!"</p>
+        <strong>- Juliana Lima</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Os pratos são preparados com atenção aos detalhes. Excelente experiência!"</p>
+        <strong>- Marcos Oliveira</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Serviço rápido e sabor inigualável. Virei cliente fixo!"</p>
+        <strong>- Rafael Costa</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Fui surpreendido pela qualidade dos pratos. Sensacional!"</p>
+        <strong>- Lucas Dias</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Sobremesas perfeitas, especialmente o tiramisu."</p>
+        <strong>- Fernanda Almeida</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Adorei o rodízio de sushi. Muito bem servido e fresquinho."</p>
+        <strong>- Pedro Henrique</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Atendimento impecável e cardápio diversificado. Voltarei mais vezes."</p>
+        <strong>- Gabriela Martins</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Pizza maravilhosa, molho caseiro e massa perfeita. Super recomendo!"</p>
+        <strong>- Luana Ribeiro</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Um dos poucos lugares onde o prato principal é tão bom quanto o prometido."</p>
+        <strong>- Daniel Nascimento</strong>
+    </div>
+</section>
+<section id="contato">
+    <h2>Entre em Contato</h2>
+    <p><i class="fas fa-phone-alt"></i> Telefone: (71) 992942934</p>
+    <p><i class="fas fa-envelope"></i> Email: andersonziggler121@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> Endereço: Rua das Delícias, 123 - São Paulo/SP</p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.448417740996!2d-46.63465338502155!3d-23.550659284684247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59555555555%3A0x5555555555555555!2sSão+Paulo%2C+SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+</section>
+<footer id="footer">
+    <p>&copy; 2025 Restaurante Mestre Cuca. Todos os direitos reservados.</p>
+    <p><a href="mailto:andersonziggler121@gmail.com" class="email-link">Envie um e-mail para o Desenvolvedor do Site</a></p>
+       <p><a href="https://wa.me/5571992942934" class="whatsapp-button">Entre Em Contato Com O Desenvolvedor Do Site</a></p>
+</footer>
+<div class="fixed-buttons">
+    <a href="mailto:andersonziggler121@gmail.com" class="btn-fixed btn-email" title="E-mail">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.instagram.com/i_am_andersonpacheco/" target="_blank" class="btn-fixed btn-instagram" title="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/anderson-pacheco-dev/" target="_blank" class="btn-fixed btn-linkedin" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/AndersonRedfield?tab=repositories" target="_blank" class="btn-fixed btn-github" title="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+</div>
+<a href="http://wa.me/5571992942934" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<script src="Script.js"></script>
+</body>
+</html>
